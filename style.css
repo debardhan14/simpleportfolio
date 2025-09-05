@@ -38,3 +38,10 @@ footer a:hover{
   font-weight: bold;            /* bolder text */
   transition: background-color 0.3s; /* smooth hover */
 }
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+

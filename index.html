@@ -26,9 +26,31 @@
   </a>
   <p>© 2025 Debardhan Kalita</p>
    </footer>
-   <audio autoplay loop >
-    <source src="chillhop-mix-136000.mp3" type="audio/mpeg">
-   </audio>
+  <!-- Background music (muted autoplay to bypass browser restrictions) -->
+<audio id="bgm" autoplay loop muted>
+  <source src="chillhop-mix-136000.mp3" type="audio/mpeg">
+</audio>
+
+<!-- Music toggle button -->
+<button id="musicBtn">🔇</button>
+
+<script>
+  const bgm = document.getElementById("bgm");
+  const btn = document.getElementById("musicBtn");
+
+  btn.addEventListener("click", () => {
+    if (bgm.muted) {
+      bgm.muted = false;
+      bgm.play();
+      btn.textContent = "🔊";
+    } else {
+      bgm.muted = true;
+      btn.textContent = "🔇";
+    }
+  });
+</script>
+
     </body>
 
 </html> 
+

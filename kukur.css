@@ -1,0 +1,19 @@
+.btn2{
+  display: inline-block;        /* makes it behave like a button */
+  background-color: #483972;    /* button background */
+  color: rgb(12, 12, 12);                 /* text color */
+  padding: 10px 20px;           /* space inside */
+  margin: 5px;                  /* space between buttons */
+  border-radius: 8px;           /* rounded corners */
+  text-decoration: none;        /* removes underline */
+  font-weight: bold;            /* bolder text */
+  transition: background-color 0.3s; /* smooth hover */
+}
+body{
+    background-color: rgb(141, 38, 189);
+}
+img{
+    margin-left: auto;
+    margin-right:auto;
+    display:block;
+}
